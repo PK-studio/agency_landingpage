@@ -1337,7 +1337,7 @@ mark,
   color: #777;
 }
 .text-primary {
-  color: #337ab7;
+  color: rgb(0, 131, 96);
 }
 a.text-primary:hover,
 a.text-primary:focus {
@@ -5205,6 +5205,11 @@ a.thumbnail.active {
   overflow: hidden;
   zoom: 1;
 }
+.media{
+  position: relative;
+  background-color: rgb(244, 244, 244);
+  min-height: 155px;
+}
 .media-body {
   width: 10000px;
 }
@@ -5226,17 +5231,12 @@ a.thumbnail.active {
 .media-right,
 .media-body {
   display: table-cell;
-  vertical-align: top;
-}
-.media-middle {
   vertical-align: middle;
 }
-.media-bottom {
-  vertical-align: bottom;
-}
 .media-heading {
+  font-weight: 600;
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-left: 15px;
 }
 .media-list {
   padding-left: 0;
@@ -6320,32 +6320,32 @@ button.close {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 15%;
+  width: 25%;
   font-size: 20px;
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  text-shadow: 0 3px 3px rgba(0, 0, 0, .8);
   background-color: rgba(0, 0, 0, 0);
   filter: alpha(opacity=50);
   opacity: .5;
 }
 .carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  /*background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
   background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
   background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-  background-repeat: repeat-x;
+  background-repeat: repeat-x;*/
 }
 .carousel-control.right {
   right: 0;
   left: auto;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  /*background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
   background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
   background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-  background-repeat: repeat-x;
+  background-repeat: repeat-x;*/
 }
 .carousel-control:hover,
 .carousel-control:focus {
@@ -6389,6 +6389,7 @@ button.close {
   content: '\203a';
 }
 .carousel-indicators {
+  display:none;
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -6408,14 +6409,14 @@ button.close {
   cursor: pointer;
   background-color: #000 \9;
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #fff;
+  border: 2px solid #337ab7;
   border-radius: 10px;
 }
 .carousel-indicators .active {
   width: 12px;
   height: 12px;
   margin: 0;
-  background-color: #fff;
+  background-color: #337ab7;
 }
 .carousel-caption {
   position: absolute;
@@ -6456,7 +6457,7 @@ button.close {
     padding-bottom: 30px;
   }
   .carousel-indicators {
-    bottom: 20px;
+    bottom: 5px;
   }
 }
 .clearfix:before,

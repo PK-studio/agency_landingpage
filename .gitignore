@@ -1,0 +1,7 @@
+# Directory #
+###################
+node_modules/
+
+# Single Files #
+###################
+*.zip
