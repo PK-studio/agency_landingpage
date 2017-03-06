@@ -250,7 +250,7 @@ hr.small {
     box-shadow: inset 0px 0px 10px 1px rgba(4,0,46,1);
 }
 .quoteBox{
-    width: 600px;
+    max-width: 600px;
     height: 200px;
     margin: auto;
 }

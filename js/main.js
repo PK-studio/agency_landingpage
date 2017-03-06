@@ -100,21 +100,25 @@ $(function() {
 })(jQuery);
 
 
-//NAVBAR - SWING SCROLL
-	$(document).ready(function(){
-		$('a[href^="#"]').on('click',function (e) {
-			e.preventDefault();
 
-			var target = this.hash;
-			var $target = $(target);
 
-			$('html, body').stop().animate({
-				'scrollTop': $target.offset().top
-			}, 600, 'swing', function () {
-				window.location.hash = target;
-			});
-		});
-	});
+//NAVIGATION
+    var changenavigation = $('#top').offset().top + 100;
+	TweenLite.to($(".navbar-default"), 0.2, {height: "100px"})
+	TweenLite.to($("#logo"), 0.2, {height: "60px", "padding-bottom": "5px"})
+
+$(window).on('scroll',function(){
+	stop = Math.round($(window).scrollTop());
+	if (stop >= changenavigation) {
+		// $('.navbar').addClass('navbar-inverse');
+        TweenLite.to($(".navbar-default"), 0.2, {height: "60px"})
+        TweenLite.to($("#logo"), 0.2, {height: "40px", "padding-bottom": "0px"})
+	} else {
+		TweenLite.to($(".navbar-default"), 0.2, {height: "100px"})
+		TweenLite.to($("#logo"), 0.2, {height: "60px", "padding-bottom": "5px"})
+   }
+});	
+
 
 //Header Animation
 var header = $(".text-vertical-center").children();
