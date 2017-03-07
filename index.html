@@ -51,9 +51,6 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#top">Home</a>
-                    </li>
-                    <li>
                         <a href="#about">Service</a>
                     </li>
                     <li>
@@ -302,68 +299,101 @@
     </header></div>
 
     <!-- Courses -->
-    <section id="courses" class="services">
-        <div class="row">
+    <section id="courses"><div class="courses">
+        <div class="row services">
             <div class="col-sm-4">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
+                        <!--<span class="fa-stack fa-5x">
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>
                               <i class="fa fa-car fa-stack-1x fa-inverse"></i>
-                        </span>
+                        </span>-->
                     </div>
                     <div class="panel-body">
                         <h4>Service Two</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <a href="#courses" data-course="1" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
+                        <!--<span class="fa-stack fa-5x">
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>
                               <i class="fa fa-support fa-stack-1x fa-inverse"></i>
-                        </span>
+                        </span>-->
                     </div>
                     <div class="panel-body">
                         <h4>Service Three</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <a href="#courses" data-course="2" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
-                        <span class="fa-stack fa-5x">
+                        <!--<span class="fa-stack fa-5x">
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>
                               <i class="fa fa-database fa-stack-1x fa-inverse"></i>
-                        </span>
+                        </span>-->
                     </div>
                     <div class="panel-body">
                         <h4>Service Four</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <a href="#courses" data-course="3" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+    </div></section>
+        <div class="signup" id="1">
+        
+            <form class="form-horizontal" action="https://formspree.io/vb.karwowski@gmail.com" method="POST">
+            <div class="form-group">
+                <div class="col-sm-12">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="_replyto">
                 </div>
             </div>
-        </div>
-    </aside>
+            <div class="form-group">
+                <div class="col-sm-12">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password" name="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                <input type="text" class="form-control" id="inputPassword3" placeholder="Text" name="Text">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                <input type="text" class="form-control" id="inputPassword3" placeholder="Course" name="Course">
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <textarea class="form-control" rows="3" name="Note"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <div class="checkbox">
+                        <label>
+                        <input type="checkbox" name="terms"> I accept the Terms of Service
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <!--<div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Sign in</button>
+                </div>-->
+                
+                <input type="submit" class="submitForm" value="Send">
+            </div>
+            </form>
+
+            </div>
+
 
     <!-- Footer -->
     <footer>
@@ -377,18 +407,6 @@
                     <ul class="list-unstyled">
                         <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
                         <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
                     <hr class="small">

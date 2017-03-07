@@ -237,7 +237,7 @@ hr.small {
 
 /* Services */
 .services {
-    padding: 70px 0;
+    padding: 40px 0;
     max-width: 1200px;
     margin: auto;
 }
@@ -317,6 +317,37 @@ header.carousel .fill {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+/*COURSES*/
+.courses{
+    background-color: #f4f4f4;
+}
+.signup{
+    background-image: url("../img/signup.jpg");
+    background-size: contain;
+    background-position: center center;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 3px 14px 0px rgba(0, 0, 0, 0.6);
+}
+.submitForm{
+    padding: 20px;
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+    margin: 20px auto;
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.submitForm:hover{
+    background-color: rgba(31, 243, 0, 0.6);
+}
+.checkbox{
+    font-size: 120%;
+    color: #dc0f0f;
+    font-weight: bold;
+}
+
 /* Call to Action */
 
 .call-to-action {
@@ -330,7 +361,9 @@ header.carousel .fill {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 10px 0 0px 0;
+    color: white;
+    background-color: #2c2c2c;
 }
 
 #to-top {

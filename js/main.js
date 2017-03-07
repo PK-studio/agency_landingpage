@@ -153,3 +153,15 @@ function slideQuote(){
     if (currentQuote>myQuotes.length){currentQuote=1;}
     $(".quote div").hide().html(myQuotes[currentQuote]).fadeIn("slow");
 }
+
+//COURSE
+$(".signup").hide();
+var btn = $(".btn-primary")
+var arrBtn = [].slice.call(btn)
+arrBtn.forEach(function (element){
+     var course=$(element).attr("data-course");
+     $(element).on("click", function(){
+         console.log(course)
+         $(".signup").fadeIn(600)
+     })
+})
